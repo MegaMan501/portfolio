@@ -1,52 +1,144 @@
-<!--
-  <app-masthead></app-masthead>
-  <app-bio></app-bio>
-  <app-education></app-education>
-  <app-skills></app-skills>
-  <app-experience></app-experience>
-  <app-projects></app-projects>
-  <app-contact></app-contact>
--->
+<app-main-nav>
+  <div class="site">
 
-<div class="site">
+    <!-- Marketing Masthead -->
+    <div class="masthead">
+      <span class="spacer"></span>
+      <h1>Nabil Rahaman</h1>
+      <!-- <img src="../assets/circuit-board.svg" alt="hello"> -->
+      <button mat-stroked-button color="accent">Download Resume</button>
+      <span class="spacer"></span>
+    </div>
 
-  <!-- Marketing Masthead -->
-  <div class="masthead">
-    <img src="../assets/IMG_0185.JPG" alt="hello">
-    <div class="back">
-      <div class="text">Nabil Rahaman</div>
+    <div class="avatar">
+      <img src="../assets/penguin.svg" alt="headshot">
+    </div>
+
+    <!-- Biography -->
+    <div class="bio">
+      <!-- <img class="avatar" src="../assets/headshot.png" alt="headshot"> -->
+      <div class="btext">
+        <h2>Biography</h2>
+        <h3>Software Engineer - Full Stack</h3>
+        <p>
+          As a Supplemental Instruction Leader for the Tarrant Count College Programming Class,
+          I have gained teamwork and leadership experience by helping students learn the basics
+          of coding. Currently looking to apply teamwork and leaderships skill towards today's
+           computing challenges. The computing challenges of today’s market will require the
+           use of open source technologies. I use Linux to create software solutions to problems
+           that I may encounter to learn more about computing space of today.
+        </p>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="education" id="education">
+      <div>
+        <h2>University of North Texas</h2>
+        <h3>Bachelor of Science in Computer Science | May 2020 | Denton, TX | GPA 3.7</h3>
+        <h4>Relevant Coursework</h4>
+        <p>
+          Data Structures (Trees, Graphs, Heaps, etc...), Systems Programming, Algorithms, Digital
+          Image Processing, AI, Computer Security, Natural Language Processing,Computer Networking,
+          Software Testing, OOP, Client-Server, and Sockets.
+        </p>
+        <h4>Accomplishments</h4>
+        <p>
+          Dean's List 2019
+        </p>
+      </div>
+      <mat-divider></mat-divider>
+      <div>
+        <h2>Tarrant County College</h2>
+        <h3>Associates Degree in Computer Science | May 2018 | Hurst, TX | GPA 3.7</h3>
+        <h4>Relevant Coursework</h4>
+        <p>
+          C# development, MS SQL, Computer Security,
+          Software Engineering, Hardware Maintenance, Linked Lists, Stacks, and Queues
+        </p>
+        <h4>Accomplishments</h4>
+        <p>
+          Dean's List 2016 and 2017, Programming I and II Certificate, Information
+          Technology Support Certificate
+        </p>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="experience" id="experience">
+      <div>
+        <h2>CodePath.org</h2>
+        <h3>Android Tech Fellow | Feb 2020 - Now | Denton, TX</h3>
+        <p>
+          As a Tech Fellow, I am currently coordinating Android App development course at my
+          campus. The course focuses on utilizing Android Studio to build complex applications
+          to teach students software engineering best practices.
+        </p>
+      </div>
+      <mat-divider></mat-divider>
+      <div>
+        <h2>Tarrant County College Northeast Campus</h2>
+        <h3>Supplemental Instruction Leader | Aug 2017 - May 2018 | Hurst, TX</h3>
+        <p>
+          Tutored programming fundamentals to first year computer science students by, teaching
+          them basic data structures, arrays, conditional statements, loops, and functions. The tutoring
+          material utilized coding examples, white-boarding, and paired programming exercises.
+          Additionally, created an automated cancellation request form for my superiors to reduce
+          the time and effort required to approve cancellations.
+        </p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills" id="skills">
+      <h2>Skills</h2>
+      <p>
+        C, C++, Python, GIT, HTML, CSS, Java, C#, .Net, Typescript, Javascript, Bash, Sed,
+        Gawk, Angular, NodeJS, MVC, ExpressJS, MEAN, MongoDB, Markdown, Unix, Ubuntu, Arch Linux,
+        Windows 10, AWS, Google Cloud, Azure, QT, Visual Studio, REST, Bootstrap, Pfsense, KVM, JSON
+        QEMU, SQL, MySql, MariaDB, Sqlite, UI, UX, Matlab, Android Studio, Lineage OS, Firebase
+      </p>
+      <p>
+        Kanban, Project Management, Scrum, Agile, Technical Writing, Trello, Slack, Word,
+        PowerPoint, Microsoft Office, Teams, LibreOffice
+      </p>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects" id="projects">
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            SimpleTweet
+          </h5>
+          <p class="card-text">
+            SimpleTweet user’s can view their most recent tweets. Furthermore, they can tweet out new
+            messages to their homepage. Authentication of accounts are done by using OAUTH and the
+            twitter API is used to do the rest.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            ParseInstagram
+          </h5>
+          <p class="card-text">
+            Instead of using the Instagram API, this application uses a MongoDB from a Heroku instance to
+            store all the post of the users. The application stores each of the post by using standard REST
+            API calls to store and receive data from the database.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+      <p>contact</p>
     </div>
   </div>
 
-  <!-- Header -->
-  <div class="header">
-    <ul>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-    </ul>
-  </div>
-
-  <div class="bio">
-    <h1>Nabil Rahaman</h1>
-    <h2>Software Engineer</h2>
-    <p>bio</p>
-  </div>
-  <div class="education" id="education">
-    <p>education</p>
-  </div>
-  <div class="experience" id="experience">
-    <p>experience</p>
-  </div>
-  <div class="skills" id="skills">
-    <p>skills</p>
-  </div>
-  <div class="projects" id="projects">
-    <p>projects</p>
-  </div>
-  <div class="contact">
-    <p>contact</p>
-  </div>
-</div>
-
+</app-main-nav>

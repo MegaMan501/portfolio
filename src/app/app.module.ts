@@ -11,25 +11,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
-import { MastheadComponent } from './masthead/masthead.component';
-import { EducationComponent } from './education/education.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { SkillsComponent } from './skills/skills.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
-import { BioComponent } from './bio/bio.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MastheadComponent,
-    EducationComponent,
-    ExperienceComponent,
-    SkillsComponent,
-    ProjectsComponent,
-    ContactComponent,
-    BioComponent
+    MainNavComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +31,7 @@ import { BioComponent } from './bio/bio.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatDividerModule,
     MatCardModule
   ],
   providers: [],
