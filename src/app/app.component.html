@@ -5,35 +5,34 @@
     <div class="masthead">
       <span class="spacer"></span>
       <h1>Nabil Rahaman</h1>
-      <!-- <img src="../assets/circuit-board.svg" alt="hello"> -->
-      <button mat-stroked-button color="accent">Download Resume</button>
+      <a href="../assets/2020SP-Resume.pdf">
+        <button class="stroked-btn">Download CV</button>
+      </a>
       <span class="spacer"></span>
     </div>
 
     <div class="avatar">
-      <img src="../assets/penguin.svg" alt="headshot">
+      <img src="../assets/headshot.png" alt="headshot">
     </div>
 
     <!-- Biography -->
     <div class="bio">
-      <!-- <img class="avatar" src="../assets/headshot.png" alt="headshot"> -->
       <div class="btext">
         <h2>Biography</h2>
         <h3>Software Engineer - Full Stack</h3>
+        <hr>
         <p>
-          As a Supplemental Instruction Leader for the Tarrant Count College Programming Class,
-          I have gained teamwork and leadership experience by helping students learn the basics
-          of coding. Currently looking to apply teamwork and leaderships skill towards today's
-           computing challenges. The computing challenges of today’s market will require the
-           use of open source technologies. I use Linux to create software solutions to problems
-           that I may encounter to learn more about computing space of today.
+          Hey, there my name is Mohamed Rahaman but most people know me as Nabil. I was born in Dhaka Bangladesh and I emigrated to the United States when I was 5 years old. Most of my childhood was spent in Los Angles, CA. Ever since I was a kid I’ve always been curious about technology and how software interacts with hardware. Since, then I’ve moved to Fort Worth, TX, while in Texas graduated from high school and started college career. I am currently attending The University of North Texas, which is located in Denton, TX. My major is Computer Science, and this is my final semester as I am graduating this May 2020. I’ve worked with a wide breath of technologies, focusing on full stack development. The operating system that I use is ArchLinux, I have been on Arch for the past 4 years developing code and virtualization different OS’s to gain an understanding of how multi-platform application development works. Most of the application’s that I have build was done in Linux. However, I did initial develop on Windows. I am an avid hardware enthusiast, I have built and maintained all my families computers, most of which run Linux. I went as far as setting up a custom router by using Pfsense, for the ultimate security and speed focused home network. Additionally, I have multiple home servers for file storage.
         </p>
       </div>
     </div>
 
     <!-- Education -->
     <div class="education" id="education">
-      <div>
+      <h1>Education</h1>
+      <hr>
+
+      <div class="college">
         <h2>University of North Texas</h2>
         <h3>Bachelor of Science in Computer Science | May 2020 | Denton, TX | GPA 3.7</h3>
         <h4>Relevant Coursework</h4>
@@ -47,8 +46,10 @@
           Dean's List 2019
         </p>
       </div>
+
       <mat-divider></mat-divider>
-      <div>
+
+      <div class="college">
         <h2>Tarrant County College</h2>
         <h3>Associates Degree in Computer Science | May 2018 | Hurst, TX | GPA 3.7</h3>
         <h4>Relevant Coursework</h4>
@@ -66,6 +67,8 @@
 
     <!-- Experience -->
     <div class="experience" id="experience">
+      <h1>Experience</h1>
+      <hr>
       <div>
         <h2>CodePath.org</h2>
         <h3>Android Tech Fellow | Feb 2020 - Now | Denton, TX</h3>
@@ -92,6 +95,7 @@
     <!-- Skills -->
     <div class="skills" id="skills">
       <h2>Skills</h2>
+      <hr>
       <p>
         C, C++, Python, GIT, HTML, CSS, Java, C#, .Net, Typescript, Javascript, Bash, Sed,
         Gawk, Angular, NodeJS, MVC, ExpressJS, MEAN, MongoDB, Markdown, Unix, Ubuntu, Arch Linux,
@@ -118,6 +122,7 @@
             twitter API is used to do the rest.
           </p>
         </div>
+        <a href="https://github.com/MegaMan501/SimpleTweet"><i class="fa fab fa-github-square"></i></a>
       </div>
 
       <div class="card">
@@ -131,14 +136,47 @@
             API calls to store and receive data from the database.
           </p>
         </div>
+        <a href="https://github.com/MegaMan501/ParseInstagram"><i class="fa fab fa-github-square"></i></a>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            PassManager
+          </h5>
+          <p class="card-text">
+            A password manager built on the QT framework and SQLite to store password securely. All, of
+            the logic for database calls are written in C++ and standard libraries were used to keep the
+            application maintainable.
+          </p>
+        </div>
+        <a href="https://github.com/MegaMan501/PassManager"><i class="fa fab fa-github-square"></i></a>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            fiAdvisor
+          </h5>
+          <p class="card-text">
+            Led a team that created a full stack MEAN application to help students budge their finances.
+            The project utilized REST API calls to connect the frontend single page application (SPA) to the
+            backend NodeJS server and MongoDB database. Furthermore, the application also connects
+            users to financial advisors through a real time chat interface.
+          </p>
+          <a href="https://fiadvisor.digital/"><i class="fa fab fa-globe"></i></a>
+        </div>
       </div>
 
     </div>
 
     <!-- Contact -->
     <div class="contact">
-      <p>contact</p>
+      <a href="https://github.com/MegaMan501" class="fa fab fa-github"></a>
+      <a href="https://linkedin.com/in/mohamed-rahaman-901333162/" class="fa fab fa-linkedin"></a>
+      <a href="mailto:mohamed.rahaman501@gmail.com?Subject=About Your Resume" class="fa fas fa-envelope"></a>
     </div>
+
   </div>
 
 </app-main-nav>

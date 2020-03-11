@@ -1,4 +1,5 @@
 $headercolor: #0b1728ff;
+$accent: #2ca089ff;
 
 .sidenav-container {
   height: 100vh;
@@ -6,25 +7,12 @@ $headercolor: #0b1728ff;
 
 .sidenav {
   width: 250px;
-  background: rgba(41, 61, 117, 0.9);
-}
-
-.sidenav .mat-toolbar {
-  font-weight: bold;
-  /* box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24); */
-  color: white;
-  background: rgba(41, 61, 117, 0.384);
+  background: $headercolor;
 }
 
 mat-nav-list a {
   color: white;
 }
-
-// .mat-toolbar.mat-primary {
-//   position: sticky;
-//   top: 0;
-//   z-index: 1;
-// }
 
 .hidden {
   display: none;
@@ -39,6 +27,11 @@ mat-toolbar a {
   margin: 0 10px;
   color: white;
   text-decoration: none;
+  font-family: freeserif-medium;
+}
+
+mat-toolbar a:hover {
+  color: $accent;
 }
 
 .toolbar {

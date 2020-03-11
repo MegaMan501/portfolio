@@ -1,9 +1,86 @@
 $headercolor: #0b1728ff;
 $sidebar: #373e48ff;
 $accent: #2ca089ff;
+$sidebar-text: rgba(203, 225, 247, 0.459);
+$bluer: rgb(53, 135, 243);
+$redr: rgb(117, 6, 6);
 
 .spacer {
   flex: 1 1 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: freeserif-medium;
+}
+
+.stroked-btn {
+  border: 3px solid $bluer;
+  background-color: transparent;
+  color: $bluer;
+  font-size: 1.0em;
+  border-radius: 10px;
+}
+
+hr {
+  border: 1px solid $accent;
+}
+
+.card {
+  border-radius: 10px;
+  background-image: url("../assets/noisy-texture-300x300-white.png");
+  background-repeat: repeat;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  margin: 20px 20px 20px 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-title {
+  font-size: 2.0em;
+  text-align: center;
+}
+
+.card a {
+  text-decoration: none !important;
+  font-size: 20px;
+  padding: 20px;
+  width: 50px;
+  color: black;
+  border-radius: 50%;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  background-color: white;
+  color: black;
+}
+
+.fa-linkedin {
+  background-color: #2867B2;
+  color: white;
+}
+
+.fa-envelope {
+  background-color: rgb(247, 56, 56);
+  color: white;
 }
 
 @supports not (display: grid) {
@@ -22,13 +99,23 @@ $accent: #2ca089ff;
     text-align: center;
     display: flex;
     flex-direction: column;
-    color: white;
     min-height: 400px;
+  }
+
+  .masthead h1 {
+    color: white;
+    font-weight: lighter;
+    font-size: 3.53em;
   }
 
   .masthead button {
     padding: 10px;
     margin: auto;
+  }
+
+  .masthead button:hover {
+    color: $accent;
+    border: 3px solid $accent;
   }
 
   .bio {
@@ -38,8 +125,13 @@ $accent: #2ca089ff;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    color: $sidebar-text;
     height: 100%;
     padding: 30px 40px 30px 40px;
+  }
+
+  .bio h2 {
+    font-size: 3em;
   }
 
   .avatar {
@@ -56,47 +148,87 @@ $accent: #2ca089ff;
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2);
     border: 10px solid $accent;
   }
 
-  // .avatar {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   width: 250px;
-  //   height: 250px;
-  //   border-radius: 50%;
-  //   border: 10px solid $accent;
-  // }
-
-  // .btext {
-  //   padding-left: 50px;
-  // }
-
   .education {
     grid-area: education;
-    background-image: url("../assets/noisy-texture-300x300.png");
+    background-image: url("../assets/noisy-texture-300x300-blue.png");
     background-repeat: repeat;
     padding: 30px 50px 30px 50px;
   }
+
+  .education h1 {
+    font-size: 3.0rem;
+    color: $headercolor;
+  }
+
+  .education h2 {
+    color: $redr;
+    font-size: 2.0rem;
+  }
+
+  .education h3 {
+    font-size: 1.5rem;
+    color: $accent;
+  }
+
+  .college h4, p {
+    margin-left: 2.0em;
+  }
+
   .experience {
     grid-area: experience;
     background-image: url("../assets/noisy-texture-300x300-mint.png");
     background-repeat: repeat;
     background-color: rgba(203, 225, 247, 0.459);
-
     padding: 30px 50px 30px 50px;
   }
+
+  .experience h1 {
+    font-size: 3.0rem;
+    color: $headercolor;
+  }
+
+  .experience h2 {
+    color: $redr;
+    font-size: 2.0rem;
+  }
+
+  .experience h3 {
+    color: $accent;
+    font-size: 1.5rem;
+  }
+
   .skills {
     grid-area: skills;
     background-color: $sidebar;
+    padding: 30px 50px 30px 50px;
+    color: $sidebar-text;
   }
+
   .projects {
     grid-area: projects;
-    background-color: cyan;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-rows: auto;
+    place-self: center;
+    background-image: url("../assets/circuit-board.svg");
+    // background-image: url("../assets/noisy-texture-300x300-orange.png");
+    background-repeat: repeat;
+    background-color: rgba(203, 225, 247, 0.459);
+    padding: 30px 50px 30px 50px;
   }
+
   .contact {
     grid-area: contact;
     background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px 10px 50px;
   }
 
   @media screen and (min-width: 600px) {
@@ -105,7 +237,6 @@ $accent: #2ca089ff;
       grid-gap: none;
       height: 100vh;
       grid-template-columns: 1fr 1fr;
-      // grid-template-rows: repeat(auto, 500px);
       grid-template-areas:
       "masthead masthead"
       "avatar bio"
@@ -120,16 +251,14 @@ $accent: #2ca089ff;
   @media screen and (min-width: 1200px) {
     .site {
 			grid-template-columns: 2fr 1fr 1fr;
-      // grid-template-areas:
-      //   "masthead masthead masthead"
-      //   "education education bio"
-      //   "experience experience bio"
-      //   "projects projects skills"
-      //   "contact contact contact";
     }
 
     .masthead {
       grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .masthead h1 {
+      font-size: 5.53em;
     }
 
     .bio {

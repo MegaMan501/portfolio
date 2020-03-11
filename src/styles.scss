@@ -1,4 +1,10 @@
-@import '~bootstrap/dist/css/bootstrap.min.css';
+// @import '~bootstrap/dist/css/bootstrap.min.css';
+@font-face {
+  font-family: freefont-medium;
+  // src: url("assets/freeserif-font/FreeSerif-YO4a.otf");
+  src: url("assets/freeserif-font/FreeSerif-4aeK.ttf");
+}
+
 
 html, body {
   height: 100%;
