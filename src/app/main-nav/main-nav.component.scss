@@ -6,12 +6,46 @@ $accent: #2ca089ff;
 }
 
 .sidenav {
-  width: 250px;
-  background: $headercolor;
+  width: 300px;
+  background-image: url("../../assets/topography.svg");
+  background-repeat: repeat;
+  background-color: $headercolor;
+}
+
+.sidenav img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $accent;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2);
+  border: 5px solid $accent;
+}
+
+.sidenav hr {
+  border: 1px solid $accent;
+  width: 80%;
+}
+
+.sidenav h1 {
+  text-align: center;
+  color: $accent;
+  font-family: freeserif-medium;
+  font-size: 2.0em;
 }
 
 mat-nav-list a {
+  display: block;
+  text-decoration: none;
   color: white;
+  font-family: freeserif-medium;
+  font-size: 1.5em;
+}
+
+mat-nav-list a:hover {
+  color: $accent;
 }
 
 .hidden {

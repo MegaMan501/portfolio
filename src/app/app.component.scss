@@ -23,6 +23,7 @@ h1,h2,h3,h4,h5,h6 {
 
 hr {
   border: 1px solid $accent;
+  // width: 95%;
 }
 
 .card {
@@ -68,6 +69,14 @@ hr {
   opacity: 0.7;
 }
 
+.fa-github-square:hover {
+  color: $accent;
+}
+
+.fa-globe:hover {
+  color: $accent;
+}
+
 .fa-github {
   background-color: white;
   color: black;
@@ -105,7 +114,7 @@ hr {
   .masthead h1 {
     color: white;
     font-weight: lighter;
-    font-size: 3.53em;
+    font-size: 3.0em;
   }
 
   .masthead button {
@@ -174,7 +183,7 @@ hr {
     color: $accent;
   }
 
-  .college h4, p {
+  .college p {
     margin-left: 2.0em;
   }
 
@@ -201,6 +210,10 @@ hr {
     font-size: 1.5rem;
   }
 
+  .experience p {
+    margin-left: 2.0em;
+  }
+
   .skills {
     grid-area: skills;
     background-color: $sidebar;
@@ -211,11 +224,10 @@ hr {
   .projects {
     grid-area: projects;
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-template-rows: auto;
     place-self: center;
     background-image: url("../assets/circuit-board.svg");
-    // background-image: url("../assets/noisy-texture-300x300-orange.png");
     background-repeat: repeat;
     background-color: rgba(203, 225, 247, 0.459);
     padding: 30px 50px 30px 50px;
